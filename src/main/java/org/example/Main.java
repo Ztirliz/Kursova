@@ -34,13 +34,10 @@ public class Main {
         }
         lfsr1.setRegister(initialRegister1);
 
-        System.out.println("Вкажіть к-сть ітерацій:");
-        int numIterations = scanner.nextInt();
-
         System.out.println("LFSR1:");
 
         // Викликаємо метод printGeneratedNumbers() для генерації чисел LFSR
-        String line = lfsr1.printGeneratedNumbers(numIterations);
+        String line = lfsr1.printGeneratedNumbers(32);
         line = new StringBuilder(line).reverse().toString();
 
         // Розділяємо рядок line на окремі частини A, B і C
